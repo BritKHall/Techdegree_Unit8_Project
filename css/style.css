@@ -1,0 +1,108 @@
+    *{
+        
+    }
+   
+    body {
+        position: relative;
+        background-color: rgba(238, 238, 238, 0.377);
+        margin-left: 20px;
+        margin-right: 20px;
+
+        }
+/* =================cards=============================== */
+
+
+
+    .card{
+        background-color: white;
+        border-radius: 5px;
+        border: .5px solid rgb(194, 194, 194);
+        margin-bottom: 20px;
+        padding:20px;
+    }
+
+    .avatar{
+       float: left;
+       border-radius: 50%;
+    }
+
+    .text-container{
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       justify-content: space-evenly;
+       margin:none;
+       padding: none;
+    }
+
+    h2,
+    p{
+        margin: 5px;
+    }
+
+/* =======================overlay========================*/
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(100, 100, 100, 0.4)
+        }
+        
+    .modal {
+        width: 375px;
+        margin: 15% auto auto;
+        position: relative;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #778;
+        border-radius: 5px;
+        padding: 30px 20px;
+        }
+    
+    .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        cursor: pointer;
+        }
+
+    .hidden {
+        display: none;
+        }
+
+/*=============== media Q ========================*/
+
+    @media (min-width:730px) {
+
+
+
+        .grid-container{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            grid-auto-flow: row;
+        }
+
+
+
+
+    }
+    @media (min-width:1000px) {
+
+        body{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .grid-container{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+
+        }
+
+
+
+
+    }
