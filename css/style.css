@@ -1,17 +1,60 @@
     *{
-        
+        box-sizing: border-box;
     }
    
     body {
         position: relative;
         background-color: rgba(238, 238, 238, 0.377);
-        margin-left: 20px;
-        margin-right:20px;
-
         }
+
+    h1{
+        font-family: 'Arapey', serif;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        color: grey;
+        font-weight: 400
+    }
+
+/* =================search=============================== */
+
+.search-container{
+    padding-right: 1rem;
+    padding-left: 1rem; 
+}
+
+input#search{
+    display: block;
+    width: 380px;
+    height: 2rem;
+    font-size: 1rem;
+    outline: none;
+    padding-left: 1rem;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    margin: 0 auto 1rem auto;    
+}
+
+input#search:focus{
+    border-color: rgb(140, 140, 207);
+    width:430px;
+    transition: .5s ease-in;
+}
+
+#search::placeholder{
+    color:rgba(0, 0, 0, 0.233);
+    padding-left: 5px;
+  }
+
 /* =================cards=============================== */
 
-
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        grid-gap: 20px;
+    }
 
     .card{
         display:grid;
@@ -22,7 +65,11 @@
         border: .5px solid rgb(194, 194, 194);
         margin-bottom: 20px;
         padding:20px; 
-        
+    }
+
+    .card:hover{
+        background-image: url("../images/bluey.jpg");
+        cursor: pointer;
     }
 
     .avatar{
@@ -32,12 +79,23 @@
 
     .text-container{
        grid-area: text;
-       padding-left:5px;
+       padding-left:15px;
+       
     }
 
     h2,
     p{
         margin: 5px;
+    }
+
+
+    h2{
+        font-family: 'Prata', serif;    
+        color:rgb(140, 140, 207);
+    }
+
+    p{
+        font-family: 'Arapey', serif;
     }
 
 /* =======================overlay========================*/
@@ -68,6 +126,10 @@
         cursor: pointer;
         }
 
+        .modal-close:hover {
+            background-color: #e4e4e4
+        }
+
     .hidden {
         display: none;
         }
@@ -77,9 +139,7 @@
     @media (min-width:730px) {
 
         .grid-container{
-            display:grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
         }
 
     }
