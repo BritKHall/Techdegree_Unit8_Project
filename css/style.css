@@ -142,6 +142,10 @@ input#search:focus{
         display: none;
         }
 
+    .hidemod{
+        display:none
+    }
+
     .arrow{
         font-weight: bolder;
         top:50%;
