@@ -67,10 +67,10 @@ input#search:focus{
         padding:20px; 
     }
 
-    .card:hover{
-        background-image: url("../images/bluey.jpg");
-        cursor: pointer;
-    }
+        .card:hover{
+            background-image: url("../images/bluey.jpg");
+            cursor: pointer;
+        }
 
     .avatar{
       grid-area: avatar;
@@ -124,6 +124,7 @@ input#search:focus{
         right: 15px;
         top: 5px;
         cursor: pointer;
+        outline:none;
         }
 
         .modal-close:hover {
