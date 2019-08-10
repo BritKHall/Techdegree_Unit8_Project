@@ -98,6 +98,11 @@ input#search:focus{
         font-family: 'Arapey', serif;
     }
 
+    .hidecard{
+        display: none
+    }
+
+
 /* =======================overlay========================*/
     .overlay {
         position: absolute;
@@ -115,8 +120,9 @@ input#search:focus{
         text-align: center;
         background: #fff;
         border: 1px solid #778;
-        border-radius: 5px;
+        border-radius:10px;
         padding: 30px 20px;
+        
         }
     
     .modal-close {
@@ -125,6 +131,7 @@ input#search:focus{
         top: 5px;
         cursor: pointer;
         outline:none;
+        border-radius: 50%
         }
 
         .modal-close:hover {
@@ -133,6 +140,24 @@ input#search:focus{
 
     .hidden {
         display: none;
+        }
+
+    .arrow{
+        font-weight: bolder;
+        top:50%;
+        font-size: 2rem;
+        cursor: pointer; 
+        position: absolute;
+        }
+        
+        #left{
+        left:20px;
+        color:rgb(122, 122, 122);
+        }
+        
+        #right{
+        right: 20px;
+        color:rgb(122, 122, 122);
         }
 
 /*=============== media Q ========================*/
